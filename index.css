@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 14px;
+}
+#viewBox{
+    width: 1000px;
+    height: 460px;
+    background: #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.items{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: inline;
+    background: #333;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    animation: move 6s linear infinite alternate both;
+}
+@keyframes move{
+    0%{
+        left: -200px;
+    }
+    10%{
+        background: rgba(0,0,0, 0.4);
+    }
+    50%{
+        background: rgba(0, 0, 0,0.12);
+    }
+    70%{
+        background: rgba(0,0,0,0.1);
+    }
+    100%{
+        left: 870px;
+        background: rgba(0,0,0,0);
+    }
+}
+.gray{
+    color: grey;
+}
+.black{
+    color: black;
+}
+input{
+    color: grey;
+}
