@@ -8,7 +8,7 @@ var rows = Math.floor(viewHeight / (itemsHeight + itemsSpace) );
 var index = 0;
 function start () {
     for (var i = 0;i < 20;i++) {
-       danMuArr.push('曹帆很可爱+' + i);
+       danMuArr.push('可爱+' + i);
     }
     clearInterval(dantimer);
     dantimer = setInterval(function () {
